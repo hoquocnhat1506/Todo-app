@@ -1,38 +1,167 @@
 .App {
+  max-width: 610px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
   text-align: center;
+  font-family: "Raleway";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.62px;
+  margin: 32px 0 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box-list {
+  border-bottom: 1px solid #bdbdbd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  margin-bottom: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.box-list div {
+  padding: 16px 12%;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item1 {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.span {
+  width: 100%;
+  height: 1px;
+  background: #BDBDBD;
+}
+
+form input {
+  padding: 16px 16px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  outline: none;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  width: 100%;
+  margin-right: 25px;
+}
+
+input::placeholder {
+  color: var(--gray-3, #828282);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  padding: 20px 39px 20px 40px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 12px;
+  background: #2F80ED;
+  box-shadow: 0px 2px 6px 0px rgba(127, 177, 243, 0.40);
+  border: unset;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #115BBF;
+}
+
+.box-list div:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.box-list div::before {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 50%;
+  height: 4px;
+  content: '';
+  background-color: #2f80ed;
+  border-radius: 4px 4px 0 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-input input::placeholder {
+  width: 78px;
+}
+
+.box-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+li:hover {
+  color: rgb(0, 102, 255);
+}
+
+ul {
+  margin: 0;
+  margin-top: 33px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+label input {
+  margin: 0 7px 0 0;
 }
