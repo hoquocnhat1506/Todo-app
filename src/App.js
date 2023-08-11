@@ -39,7 +39,6 @@ function App() {
   };
 
   const handleClick = (event) => {
-    // ... (existing code)
   };
 
   return (
