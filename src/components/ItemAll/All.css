@@ -1,0 +1,16 @@
+.box-list {
+    width: 100%;
+    padding: 16px 12%;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.box-list:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}

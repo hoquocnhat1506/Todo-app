@@ -1,0 +1,126 @@
+input:not([type="range"]):not([type="color"]) {
+    width: 100%;
+    margin-right: 25px;
+    border-radius: 12px;
+    border: 1px solid #BDBDBD;
+    padding: 20px 0 19px 12px;
+}
+
+button div {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+input::focus {
+    border-color: #2f80ed;
+}
+
+form {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+button {
+    padding: 20px 39px 20px 40px;
+    border-radius: 12px;
+    background: #2F80ED;
+    box-shadow: 0px 2px 6px 0px rgba(127, 177, 243, 0.40);
+    border: unset;
+    cursor: pointer;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+label input:not([type="range"]):not([type="color"]) {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    /* position: absolute; */
+}
+
+ul {
+    list-style-type: none;
+    /* position: relative; */
+}
+
+p {
+    position: absolute;
+    top: 0;
+}
+
+label {
+    display: flex;
+    position: relative;
+    margin-bottom: 29px;
+}
+
+li {
+    padding-left: 31px;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+svg {
+    fill: #BDBDBD;
+    /* position: absolute; */
+    right: 0;
+    cursor: pointer;
+}
+
+.completed-form {
+    position: relative;
+}
+
+.button-main svg {
+    position: unset;
+}
+
+/* 
+.main {
+    width: 124px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #EB5757;
+    cursor: pointer;
+} */
+
+.main div {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 3px;
+}
+
+.main button {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background: #EB5757;
+}
+
+button svg {
+    fill: #FFFFFF;
+}
+
+.main {
+    display: flex;
+    justify-content: end;
+}
